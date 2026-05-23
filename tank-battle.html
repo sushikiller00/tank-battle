@@ -147,7 +147,7 @@ function createInitialState() {
     bullets: [],
     bricks: [],
     steel: [],  // indestructible
-    base: { x: 11, y: 24, w: 4, h: 2, alive: true },
+    base: { x: 11, y: 22, w: 4, h: 2, alive: true },
     score: 0,
     lives: 3,
     level: 1,
@@ -565,7 +565,7 @@ function dist(x1, y1, x2, y2) {
 
 // ---- Spawn Player ----
 function spawnPlayer() {
-  const x = 11 * TILE + 1;
+  const x = 12 * TILE + 1;
   const y = 24 * TILE + 1;
   game.player = new Tank(x, y, 0, '#ffd700', true);
 }
